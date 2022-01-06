@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/mixkit-alien-technology-hum-2134.ogg-93fcbd2fc692b1e5a5bbc7945cbc7d30.oggstr"
+
+[deps]
+
+source_file="res://Assets/mixkit-alien-technology-hum-2134.ogg"
+dest_files=[ "res://.import/mixkit-alien-technology-hum-2134.ogg-93fcbd2fc692b1e5a5bbc7945cbc7d30.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

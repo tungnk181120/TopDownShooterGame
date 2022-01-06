@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/mixkit-game-level-music-689.ogg-75fd78c4b220ccec61c30d151e7cc4c7.oggstr"
+
+[deps]
+
+source_file="res://Assets/mixkit-game-level-music-689.ogg"
+dest_files=[ "res://.import/mixkit-game-level-music-689.ogg-75fd78c4b220ccec61c30d151e7cc4c7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
