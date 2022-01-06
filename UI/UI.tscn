@@ -1,0 +1,105 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/ThaleahFat.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI/UI.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 1 )
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="Control"]
+visible = false
+anchor_right = 1.0
+margin_bottom = 30.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/CenterContainer"]
+margin_left = 342.0
+margin_right = 682.0
+margin_bottom = 30.0
+
+[node name="EnemiesLabel" type="Label" parent="Control/CenterContainer/HBoxContainer"]
+margin_right = 244.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 1 )
+text = "Enemies Remaining:"
+
+[node name="CountLabel" type="Label" parent="Control/CenterContainer/HBoxContainer"]
+margin_left = 248.0
+margin_right = 340.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 2 )
+text = "XX / XX"
+
+[node name="CenterContainer3" type="CenterContainer" parent="Control"]
+visible = false
+anchor_right = 1.0
+margin_left = 322.0
+margin_top = 561.0
+margin_right = 322.0
+margin_bottom = 591.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/CenterContainer3"]
+margin_left = 370.0
+margin_right = 654.0
+margin_bottom = 30.0
+
+[node name="ShotsLabel" type="Label" parent="Control/CenterContainer3/HBoxContainer"]
+margin_right = 220.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 1 )
+text = "Shots Remaining:"
+
+[node name="ShotsCount" type="Label" parent="Control/CenterContainer3/HBoxContainer"]
+margin_left = 224.0
+margin_right = 284.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 2 )
+text = "5 / 5"
+
+[node name="CenterContainer2" type="CenterContainer" parent="Control"]
+anchor_right = 1.0
+margin_left = -328.0
+margin_top = 559.0
+margin_right = -328.0
+margin_bottom = 589.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/CenterContainer2"]
+margin_left = 453.0
+margin_right = 571.0
+margin_bottom = 30.0
+
+[node name="level" type="Label" parent="Control/CenterContainer2/HBoxContainer"]
+margin_right = 98.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 1 )
+text = "Level: "
+
+[node name="number" type="Label" parent="Control/CenterContainer2/HBoxContainer"]
+margin_left = 102.0
+margin_right = 118.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 2 )
+text = "X"
